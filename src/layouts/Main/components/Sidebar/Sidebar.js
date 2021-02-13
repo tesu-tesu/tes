@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/styles';
 import { Divider, Drawer } from '@material-ui/core';
 import DashboardIcon from '@material-ui/icons/Dashboard';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
+import PersonAddIcon from '@material-ui/icons/LockOpen';;
 
 import FormatListBulletedIcon from '@material-ui/icons/FormatListBulleted';
 
@@ -50,10 +51,15 @@ const Sidebar = props => {
       icon: <FormatListBulletedIcon />
     },
     {
+      title: 'Register',
+      href: '/register',
+      icon: <PersonAddIcon />
+    },
+    {
       title: 'Login',
       href: '/login',
       icon: <LockOpenIcon />
-    }
+    },
   ];
 
   return (
